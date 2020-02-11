@@ -8,20 +8,14 @@ use Sympfony\Component\HttpFoundation\Request;
 
 class TransController extends AbstractController
 {
-    
     public function index()
     {
-        // return $this->json([
-        //     'message' => 'Welcome to your new controller!',
-        //     'path' => 'src/Controller/TransController.php',
-        // ]);
-        // $form = $this->createFormBuilder(null);
-        
-        $lang = ['en', 'fr', 'cz'];
-
         return $this->render('trans/index.html.twig', [
-            'name_title' => 'Je suis Symfony Translation',
-            'lang' => $lang,
-        ]);
+          ]);
+    }
+
+    public function changePage()
+    {
+        return $this->render('trans/change_Page.html.twig', []);
     }
 }

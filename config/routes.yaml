@@ -7,3 +7,7 @@ trans:
     controller: App\Controller\TransController::index
     requirements:
         _locale: en_US|fr_FR|cs_CZ
+
+change_page:
+    path: /{_locale}/change
+    controller: App\Controller\TransController::changePage
