@@ -4,39 +4,12 @@
 
 {% block body %}
 
-	<dir class="container">
-		<div class="row">
-			 <div class="col-md-auto">
-				<h1>{{ "title.page"|trans }}</h1>
-			</div>
-		</div>
-		{# <div>
-			<select name="langue">
-				<optgroup>
-					{% for langs in lang %}
-					    <option value="">	
-					    	{{ langs }}				    	
-						</option>
-					{% endfor %}
-				</optgroup>
-			</select>
-		</div>	 #}
-	{# 	{% if (app.request.getLocale()) == 'en' %}
-		<a href="{{ path(route, route_params|merge({ '_locale': 'cs' })) }}"></a>
-		{% endif %}
-		
-		{% if (app.request.getLocale()) == 'fr' %}
-		<a href="{{ path(route, route_params|merge({ '_locale': 'en' })) }}"></a>
-		{% endif %}
-		{% if (app.request.getLocale()) == 'cs' %}
-		<a href="{{ path(route, route_params|merge({ '_locale': 'fr' })) }}"></a>
-		{% endif %} #}
+	<div class="container">
 		<p>
 			{{ "symfony.great"|trans }}
-			{# {% trans %}symfony.great{% endtrans %} #}
 			
 		</p>
-		<button type="submit" class="btn btn-primary" onclick="index.php">{{ "trans.but"|trans }}</button>
-	</dir>
+		<a class="btn btn-primary" href="{{ path('change_page') }}">{{ "trans.but"|trans }}</a>
+	</div>
     
 {% endblock %}

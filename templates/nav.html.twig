@@ -1,12 +1,15 @@
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">{{ "trad"|trans }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
                 {# à copier #}
+               <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('change_page') }}">{{ "home.nav"|trans }} <span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> </span>{{ "choice"|trans }}</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown09">
@@ -17,9 +20,13 @@
                 </li>
                 {#--------------------------- #}
             </ul>
-            <form class="form-inline my-2 my-md-0">
+          {#   <form class="form-inline my-2 my-md-0">
                 <input class="form-control" type="text" placeholder={{ "search.placeholder"|trans }} aria-label={{ "search.label"|trans }}>
-            </form>
+            </form> #}
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
         </div>
     </nav>
 </div>
