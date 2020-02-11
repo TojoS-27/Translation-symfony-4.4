@@ -5,3 +5,5 @@ search:
   placeholder: Search
   label: Search
 choice: Choose language
+over.page: The translation works in several pages !
+home.nav: Home
