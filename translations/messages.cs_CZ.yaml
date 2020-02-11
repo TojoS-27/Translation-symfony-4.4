@@ -1,0 +1,7 @@
+symfony.great: Symfonie je skvělá
+trans.but : Přeložit
+title.page: Jsem Symfony Translation
+search:
+  placeholder: vyhledávat
+  label: vyhledávat
+choice: Vyberte jazyk

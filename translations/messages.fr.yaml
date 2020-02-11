@@ -1,0 +1,7 @@
+symfony.great: J'aime Symfony
+trans.but : Traduire
+title.page: Je suis Symfony Translation
+search:
+  placeholder: Rechercher
+  label: Rechercher
+choice: Choisir langue

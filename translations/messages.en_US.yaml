@@ -1,0 +1,7 @@
+symfony.great: Symfony is great
+trans.but : Translate
+title.page: I am Symfony Translation
+search:
+  placeholder: Search
+  label: Search
+choice: Choose language
