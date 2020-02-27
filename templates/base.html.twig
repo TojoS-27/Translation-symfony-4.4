@@ -13,6 +13,7 @@
 	{% set route = app.request.get('_route') %}
 	{% set route_params = app.request.get('_route_params') %}
 	{% include 'nav.html.twig' %}
+	{% include 'sidebar.html.twig' %}
 	{% block body %}{% endblock %}
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
