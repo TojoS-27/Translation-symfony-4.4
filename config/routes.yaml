@@ -5,8 +5,8 @@
 trans:
     path: /{_locale}/trans
     controller: App\Controller\TransController::index
-    requirements:
-        _locale: en_US|fr_FR|cs_CZ
+    # requirements:
+    #     _locale: en_US|fr_FR|cs_CZ
 
 change_page:
     path: /{_locale}/change
