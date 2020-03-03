@@ -1,4 +1,9 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_row(form.lastname,{'attr':{'placeholder': "Lastname"}}) }}
+    {{ form_row(form.firstname,{'attr':{'placeholder': "firstname"}}) }}
+    {{ form_row(form.email,{'attr':{'placeholder': "email"}}) }}
+    {{ form_row(form.address,{'attr':{'placeholder': "address"}}) }}
+    {{ form_row(form.biography,{'attr':{'placeholder': "biography"}}) }}
+	<button class="btn btn-success">{{ button_label|default('Save') }}</button>
+    <a class="btn btn-primary" href="{{ path('user_index') }}">{{ 'back'|trans }}</a>
 {{ form_end(form) }}

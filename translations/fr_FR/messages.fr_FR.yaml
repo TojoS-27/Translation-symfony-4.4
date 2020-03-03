@@ -1,10 +1,28 @@
 symfony.great: Par exemple, l'article 11 de la Déclaration interdit explicitement le clonage d'êtres humains.
 trans.but : Traduire
-title.page: TRADUIRE EN DIFFERENTE LANGUE
 search:
   placeholder: Rechercher
   label: Rechercher
 choice: Choisir langue
 over.page: La traduction fonctionne dans plusieurs page !
 home.nav: Accueil
+list_user.nav: Listes des Utilisateurs
 trad: TRADUCTION
+user:
+  index: Index des utilisateurs
+  create: Nouvelle Utilisateur
+  show: Voir
+  save: Enregister
+  edit: Modifier
+  delete: Supprimer
+  no_records_found: aucun enregistrement trouvé
+  edit_title: Modifier Utilisateur
+  lastname: Nom
+  firstname: Prénom(s)
+  email: Email
+  address: Adresse
+  biography: Biographie
+  action: Actions
+  list: Listes des Utilisateurs
+  del_modal: Voulez-vous vraiment supprimer cet élément ?
+  back: Retour à la liste
